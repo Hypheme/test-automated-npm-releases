@@ -1,6 +1,5 @@
 {
   "name": "hyphe-test-automated-npm-releases",
-  "version": "0.0.1",
   "main": "index.js",
   "repository": "git@github.com:Hypheme/test-automated-npm-releases.git",
   "license": "MIT",

@@ -7,6 +7,7 @@ cache:
   - node_modules
 install:
 - yarn install --pure-lockfile
+before_deploy: npm version from-git
 deploy:
   provider: npm
   email: accounts@hyphe.me
