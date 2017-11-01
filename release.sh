@@ -6,4 +6,4 @@ git checkout master
 git pull -r
 
 git tag -s $1 -m 'release $1'
-git push
+git push origin $1
