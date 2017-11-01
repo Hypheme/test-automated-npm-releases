@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '8'
+cache:
+  bundler: true
+  directories:
+  - node_modules
+install:
+- yarn install --pure-lockfile
+deploy:
+  provider: npm
+  email: accounts@hyphe.me
+  api_key:
+    secure: Ul3ymcnR3R1N6QQtvUOMddrd09ED3AeClK1sqZLDNSMpEbKZukYhgtL4jJEDihFcZVc5Dfkv49r6pum9fP0J04Pw9KzbnyNYNta3+xScqBkMlIctSu0Zuqdd0+A/4VPDC1S6/jLW2VP0EKIoTrXl9M+Vqm8+dlhFUJpOWjHI5gTPQa+m8hhJt7p71XWzdaE1C9lyB3PXwxV6Tlove5IacqAADSX+Q0UqeiPCODq0KhqK1Un/x9MHquNMBNYfqlDxX2zmQQeN0NYoBZ7NdDj0PpohNU3dW+5VJnvTr04BRFIbZGDIUwhNC0FO7721Z0L43/1Bl3lcrEBTUrcBb0v0oeWTBjiUeJcaSfc/r5ytHpf1wZFj+wASS3Lp5kJ6B+adhI52rerlLs4HJRcr4heuikd1B1+XEUA/47zSjTD7utGYjvilSUd1jPBI86/dYXKboVPFrcsB1AK3Uual//tGpivLvYY8+kFWzLccxP8edE1mvXqaIZGRZg0XrkEFciXNn8PxNGsK/KDXxuOyY70+8lxEiVafpeb+hEBfXSzaM4Aake7/77XIAJDUcUOJ1dyQzeWNg+//TiiXL21ExxcXL6seZjfvt88PqjIpmtt4bCbLAM0//Cy0OmP/JCY/4fddqufBbB/ixhXruIec3iX4tIL3KVxekWSwExPisGgL24c=
+  on:
+    tags: true
+    repo: Hypheme/test-automated-npm-releases
