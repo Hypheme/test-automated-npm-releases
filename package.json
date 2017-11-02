@@ -4,5 +4,14 @@
   "repository": "git@github.com:Hypheme/test-automated-npm-releases.git",
   "license": "MIT",
   "private": false,
-  "version": "0.0.8"
+  "version": "0.0.8",
+  "scripts": {
+    "prepublish": "which rimraf",
+    "build": "rimraf lib && yarn build:bundles && yarn build:bundles:min",
+    "build:bundles": "rollup -c",
+    "build:bundles:min": "rollup -c --environment MINIFY"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
 }
